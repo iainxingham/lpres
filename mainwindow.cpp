@@ -90,7 +90,7 @@ void MainWindow::on_lpresButton_clicked()
 void MainWindow::on_pacsButton_clicked()
 {
     if(validate_rxr(ui->rxrBox->text())) {
-        QDesktopServices::openUrl(QUrl("http://rxrsv0uniview.xelht.nhs.uk/uinview/#/search?searchQuery=" + clean_mrn(ui->rxrBox->text()), QUrl::StrictMode));
+        QDesktopServices::openUrl(QUrl("http://rxrsv0uniview.xelht.nhs.uk/uniview/#/search?searchQuery=" + clean_mrn(ui->rxrBox->text()), QUrl::StrictMode));
     }
 
     else {
