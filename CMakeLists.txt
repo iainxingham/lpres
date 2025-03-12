@@ -17,6 +17,11 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        utils.h
+        utils.cpp
+        about.h
+        about.cpp
+        about.ui
 
         code128/code128.cpp
         code128/code128.h
@@ -43,9 +48,6 @@ else()
     else()
         add_executable(openlpres
             ${PROJECT_SOURCES}
-            utils.h
-            utils.cpp
-            about.h about.cpp about.ui
         )
     endif()
 endif()
